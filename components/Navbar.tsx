@@ -54,7 +54,7 @@ export default function Navbar() {
                 alt=""
                 width={70}
                 height={50}
-                className="w-full rounded-full" 
+                className="w-full rounded-full invisible md:visible" 
                 />
               </div>
             </Link>

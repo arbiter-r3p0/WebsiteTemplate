@@ -16,7 +16,7 @@ const HeroSection = () => {
           initial="hidden"
           whileInView={'show'}
           viewport={{once: false, amount: 0.7 }}
-          className="flex flex-col md:mt-2 md:mr-2 md:w-3/4">
+          className="flex flex-col w-1/2 md:mt-2 md:mr-2 md:w-3/4">
           <Image
             src="/me.jpg"
             alt=""
