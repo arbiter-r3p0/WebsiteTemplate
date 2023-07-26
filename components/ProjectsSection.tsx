@@ -37,8 +37,9 @@ const ProjectsSection = () => {
         Projects & Resources 🗂️
         <hr className="w-8 h-1 mx-auto my-4 bg-gradient-to-r from-red-400 to-pink-600 border-0 rounded"></hr>
       </h1>
-
-      <div className="flex flex-col space-y-28">
+      <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 space-y-28 my-5 py-1 sm:py-32 md:space-x-4 md:text-left">
+      
+      {/* <div className="flex flex-col space-y-28"> */}
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
