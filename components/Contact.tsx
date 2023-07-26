@@ -16,7 +16,7 @@ const ContactSection = () => {
           initial="hidden"
           whileInView={'show'}
           viewport={{once: false, amount: 0.7 }}
-          className="flex flex-col items-center justify-center md:mt-2 md:mr-2 md:w-3/4 sm:w-1/2">
+          className="flex flex-col items-center justify-center md:mt-2 md:mr-2 md:w-3/4 sm:w-1/4">
           <Image
             src="/logo2.svg"
             alt=""
@@ -54,7 +54,7 @@ const ContactSection = () => {
             
                 <FaCrow
                     size={30}
-                    className="cursor-pointer"
+                    className="cursor-pointer sm:hidden"
                 />
                 
 
