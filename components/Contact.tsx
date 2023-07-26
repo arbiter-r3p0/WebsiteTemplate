@@ -10,13 +10,13 @@ import { FaCrow } from 'react-icons/fa';
 const ContactSection = () => {
   return (
     <section id="contact">
-      <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
+      <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-5 py-1 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
         <motion.div
           variants={fadeIn('right', 0.4)}
           initial="hidden"
           whileInView={'show'}
           viewport={{once: false, amount: 0.7 }}
-          className="flex flex-col items-center justify-center w-1/4 md:mt-2 md:mr-2 md:w-1/2">
+          className="flex flex-col items-center justify-center invisible md:visible md:mt-2 md:mr-2 md:w-1/2">
           <Image
             src="/logo2.svg"
             alt=""
