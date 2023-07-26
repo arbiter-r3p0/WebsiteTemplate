@@ -1,68 +1,101 @@
+"use client" // this is a client component
 import React from "react"
 import Image from "next/image"
+import {motion} from 'framer-motion'
+import {fadeIn} from '../variants';
+
+
 
 const skills = [
+  { skill: "Python" },
+  { skill: "Mojo" },
   { skill: "HTML" },
   { skill: "CSS" },
   { skill: "JavaScript" },
   { skill: "TypeScript" },
-  { skill: "Python" },
   { skill: "React" },
   { skill: "Next.js" },
   { skill: "Tailwind CSS" },
-  { skill: "Git" },
-  { skill: "GitHub" },
-  { skill: "Jupyter Notebooks" },
+  { skill: "SQL" },
+  { skill: "Data Visualization" },
+  { skill: "Project Management" },
+  { skill: "Research" },
+  { skill: "Modern Music Workflow" },
+  { skill: "Concept Design" },
+  { skill: "Deployment" },
 ]
 
 const AboutSection = () => {
   return (
     <section id="about">
       <div className="my-12 pb-12 md:pt-16 md:pb-48">
-        <h1 className="text-center font-bold text-4xl">
-          About Me
-          <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
-        </h1>
-
+        <motion.div
+        variants={fadeIn('right', 0.2)}
+        initial="hidden"
+        whileInView={'show'}
+        viewport={{once: false, amount: 0.7 }}
+        >
+          <h1 className="text-center font-bold text-4xl">
+          How Can We Help? 🎈
+          <hr className="w-8 h-1 mx-auto my-4 bg-gradient-to-r from-red-400 to-pink-600 border-0 rounded"></hr>
+          </h1>
+          </motion.div>
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
           <div className="md:w-1/2 ">
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
-              Get to know me!
+              Our Services:
             </h1>
             <p>
-              Hi, my name is Hosna and I am a{" "}
+              Hi there! Thanks for taking the time to check us out. We are <a className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-violet-600">Arbiter Corp</a>. A team of{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> software engineer
+              <span className="font-bold">{" driven"}</span> software engineers, musicians and data scientists
               based in Los Angeles, CA.
+              <br></br>
+              <br></br>
+              <a className="font-bold">We offer:</a>
             </p>
             <br />
-            <p>
-              I graduated from California State University, Northridge in 2019
-              with a BS in Computer Engineering and have been working in the
-              field ever since.
-            </p>
+            <ul
+            className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-600"
+            >
+              <li>•Software Developement</li>
+              <li>•Data Collection</li>
+              <li>•Data Analysis</li>
+              <li>•UX Design</li>
+              <li>•UI Developement</li>
+              <li>•Machine Learning</li>
+              <li>•OpSec</li>
+              <li>•Music Production & Composition</li>
+              <li>•Sound Design</li>
+              <li>•Mixing & Mastering</li>
+              <li>•Product Testing</li>
+              <li>•Marketing</li>
+              <li>•and more...</li>
+
+            </ul>
             <br />
             <p>
-              I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, to making YouTube videos,
-              I am always seeking new experiences and love to keep myself
+              We have a wide range of personalities and passions at our company, and
+              this core pushes us to continue exploring new territory.  Our team knows 
+              just how important your vision can be, this is what drives us.
+              We are always seeking new experiences and love to keep ourselves
               engaged and learning new things.
             </p>
             <br />
             <p>
-              I believe that you should{" "}
-              <span className="font-bold text-teal-500">
+              We believe that you should{" "}
+              <span className="font-bold text-red-500">
                 never stop growing
-              </span>{" "}
-              and that&#39;s what I strive to do, I have a passion for
+              </span>,{" "}
+              and that&#39;s why we strive to do more. We have a passion for
               technology and a desire to always push the limits of what is
-              possible. I am excited to see where my career takes me and am
+              possible. Our team is excited to see where the future takes us, and we are
               always open to new opportunities. 🙂
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
-            <h1 className="text-2xl font-bold mb-6">My Skills</h1>
+            <h1 className="text-2xl font-bold mb-6">Some of Our Skills</h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (
@@ -85,6 +118,18 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
+      {/* <div className="flex flex-row items-center text-center justify-center ">
+        <Link
+          to="projects"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          <HiArrowDown size={35} className="cursor-pointer animate-bounce" />
+        </Link>
+      </div> */}
     </section>
   )
 }

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
+import Image from "next/image"
 
 interface NavItem {
   label: string
@@ -25,6 +26,10 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Projects",
     page: "projects",
   },
+  {
+    label: "Contact",
+    page:"contact"
+  }
 ]
 
 export default function Navbar() {
@@ -37,14 +42,25 @@ export default function Navbar() {
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="home">
-              <div className="container flex items-center space-x-2">
-                <h2 className="text-2xl font-bold">Hosna Qasmei</h2>
+            <Link to="home" className="cursor-pointer">
+              <div className="container flex items-center space-x-2 md:space-x-0" >
+                <h2 className="text-2xl font-bold">
+                <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-600">
+                AC
+              </span>
+                </h2>
+                <Image 
+                src="/banner.png" 
+                alt=""
+                width={70}
+                height={50}
+                className="w-full rounded-full" 
+                />
               </div>
             </Link>
             <div className="md:hidden">
               <button
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                className="cursor-pointer p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
@@ -66,7 +82,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
+                      "cursor-pointer block lg:inline-block text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-600  hover:text-neutral-500 dark:text-transparent, hover:text-neutral-500 bg-clip-text bg-gradient-to-r"
                     }
                     activeClass="active"
                     spy={true}
@@ -91,7 +107,7 @@ export default function Navbar() {
                   onClick={() => setTheme("dark")}
                   className="bg-slate-100 p-2 rounded-xl"
                 >
-                  <RiMoonFill size={25} />
+                  <RiMoonFill size={25} color="black"/>
                 </button>
               )}
             </div>
