@@ -4,7 +4,7 @@ import Image from "next/image"
 import {TypeAnimation} from 'react-type-animation';
 import {motion} from 'framer-motion'
 import {fadeIn} from '../variants';
-import { GiRaven, GiLightningBranches } from 'react-icons/Gi';
+import { FaCrow } from 'react-icons/fa';
 
 
 const ContactSection = () => {
@@ -52,14 +52,11 @@ const ContactSection = () => {
                     
                 </a>
             
-                <GiLightningBranches
+                <FaCrow
                     size={30}
                     className="cursor-pointer"
                 />
-                <GiRaven
-                    size={30}
-                    className="cursor-pointer"
-                />
+                
 
             Or give us a call!
             <br></br>
