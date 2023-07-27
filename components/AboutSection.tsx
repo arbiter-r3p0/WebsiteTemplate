@@ -28,7 +28,7 @@ const skills = [
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="my-12 pb-12 md:pt-16 md:pb-48">
+      <div className=" my-12 pb-12 md:pt-16 md:pb-48">
         <motion.div
         variants={fadeIn('right', 0.2)}
         initial="hidden"
@@ -36,7 +36,7 @@ const AboutSection = () => {
         viewport={{once: false, amount: 0.7 }}
         >
           <h1 className="text-center font-bold text-4xl">
-          How Can We Help? 🎈
+          How Can We Help? <a className="hidden md:visible">🎈</a>
           <hr className="w-8 h-1 mx-auto my-4 bg-gradient-to-r from-red-400 to-pink-600 border-0 rounded"></hr>
           </h1>
           </motion.div>

@@ -38,12 +38,12 @@ export default function Navbar() {
   const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
-    <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
+    <header className="w-full  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="home" className="cursor-pointer">
-              <div className="container flex items-center space-x-2 md:space-x-0" >
+              <div className="container flex items-center space-x-2 md:space- x-0" >
                 <h2 className="text-2xl font-bold">
                 <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-600">
                 AC

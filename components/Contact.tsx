@@ -1,95 +1,57 @@
 "use client" // this is a client component
 import React from "react"
-import Image from "next/image"
-import {TypeAnimation} from 'react-type-animation';
+
 import {motion} from 'framer-motion'
 import {fadeIn} from '../variants';
-import { FaCrow } from 'react-icons/fa';
 
 
 const ContactSection = () => {
   return (
     <section id="contact">
-      <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-5 py-1 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
+      <div className="my-12 pb-12 md:pt-16 md:pb-48">
         <motion.div
-          variants={fadeIn('right', 0.4)}
-          initial="hidden"
-          whileInView={'show'}
-          viewport={{once: false, amount: 0.7 }}
-          className="flex flex-col items-center justify-center invisible md:visible md:mt-2 md:mr-2 md:w-1/2">
-          <Image
-            src="/logo2.svg"
-            alt=""
-            width={400}
-            height={400}
-            className="shadow-2xl rounded-full"
-          />
-        </motion.div>
-        <motion.div 
-           variants={fadeIn('left', 0.2)} 
-           initial="hidden" 
-           whileInView={'show'} 
-           viewport={{ once: false, amount: 0.7 }} 
-           className='flex flex-col space-y-10 mb-6 text-[36px] lg:text-[60px] font-secondary uppercase leading-[1]'>
-          <h1 className="text-center font-bold text-4xl">Contact Us! 📱</h1>
-          <p className="text-lg mt-4 mb-6 md:text-2xl">
-            Whether you are interested in{" "} 
-            <span className="font-semibold text-red-600">
-            working with us 
-            </span>
-            , or would just like to{" "} 
-            <span className="font-semibold text-red-600">
-            learn more 
-            </span>
-            , feel free to
-            send us an
-            <br></br>
-            <br></br>
+        variants={fadeIn('right', 0.2)}
+        initial="hidden"
+        whileInView={'show'}
+        viewport={{once: false, amount: 0.7 }}
+        >
+          <h1 className="text-center font-bold text-4xl">
+          Contact
+          <hr className="w-8 h-1 mx-auto my-4 bg-gradient-to-r from-red-400 to-pink-600 border-0 rounded"></hr>
+          </h1>
+          </motion.div>
+        <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
+          <div className=" md:w-1/2 ">
+            <h1 className="justify-center text-center text-2xl font-bold mb-6 md:text-left">
+              Whether you're interested in <span className="font-bold text-red-500">working with us</span>, or just want to <span className="font-bold text-red-500">learn more</span> we'd love to hear from you!
+              <hr className="w-8 h-1 mx-auto my-4 bg-gradient-to-r from-red-400 to-pink-600 border-0 rounded"></hr>
+            </h1>
+            <p className="text-center">Email: <a className="hover:text-neutral-500 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-violet-600" href=" mailto:jboulgarides@arbitercorp.com">jboulgarides@arbitercorp.com</a></p>
+            <p className="text-center">Phone: <a className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-violet-600">(949)-212-6042</a></p>
+            <p className="text-center">
+              Thanks for taking the time to check out
+              <br className="visible md:invisible"></br> 
+              <a href="#home"className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-violet-600">Arbiter Corp</a>
+              <br></br>
+              We also have some social media links at the bottom of the page.
+            </p>
+          </div>
             
-            
-                <a className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600" href = " mailto:jboulgarides@arbitercorp.com">
-                    Email
-                    
-                </a>
-            
-                <FaCrow
-                    size={30}
-                    className="cursor-pointer invisible md:visible"
-                />
-                
-
-            Or give us a call!
-            <br></br>
-            
-            (949)-212-6042 
-          </p>
-          <TypeAnimation sequence={[
-              "Thanks for stopping by!",
-              2000,
-              'Have a great day!',
-              2000,
-
-            ]} speed={50}
-            className='text-2xl font-bold mt-6 md:mt-0 md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-purple-600'
-            wrapper='div'
-            repeat={Infinity}
-          />
-          {/* <Link
-            to="projects"
-            className="cursor-pointer text-neutral-100 font-semibold px-3 py-1 bg-red-600 rounded shadow hover:bg-green-700"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            Projects
-          </Link> */}
-          <p
-          className="text-[16px]"
-          >P.S. we have some social media links at the bottom too 😉</p>
-        </motion.div>
+        
+        </div>
       </div>
+      {/* <div className="flex flex-row items-center text-center justify-center ">
+        <Link
+          to="projects"          
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          <HiArrowDown size={35} className="cursor-pointer animate-bounce" />
+        </Link>
+      </div> */}
     </section>
   )
 }

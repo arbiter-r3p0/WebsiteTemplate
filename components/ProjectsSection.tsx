@@ -2,30 +2,30 @@ import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import SlideUp from "./SlideUp"
-import { FaCrow } from 'react-icons/fa';
+import { BsGithub, BsArrowUpRightSquare,BsFillRocketTakeoffFill } from "react-icons/bs"
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "Music",
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
+      "A collection of audio projects both complete, and in various stages of production, organized by genre and purpose.",
     image: "/birdiem.jpg",
-    github: "https://github.com/hqasmei/thankful-thoughts",
+    github: "https://drive.google.com/drive/folders/10KVPWJD8nYFKA0UycR0Z02RJpXDzTK_R?usp=sharing",
     link: "https://thankfulthoughts.io/",
   },
   {
-    name: "Collaboratory",
-    description: "A constantly updated collection of code and google collab notebooks.  We have code snippets, demos, games, information, and more!",
+    name: "Software",
+    description: "A collection of code snippets, projects, resources, games, and more.",
     image: "/coding.jpg",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://drive.google.com/drive/folders/1sCUFVhDJIgWEeolYP0pZfUaRlCAK7J_B?usp=sharing",
+    github: "https://drive.google.com/drive/u/9/folders/1sCUFVhDJIgWEeolYP0pZfUaRlCAK7J_B",
+    link: "https://platoio.com/register",
   },
   {
-    name: "Kator Family Photos",
+    name: "Explore With Us",
     description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
+      "This explore link will take you directly to whatever project the team has been cooking up for fun lately.",
     image: "/mway.jpg",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
+    github: "https://www.modular.com/mojo",
     link: "https://katorfamilyphotos.com/",
   },
 ]
@@ -34,19 +34,18 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h1 className="my-10 text-center font-bold text-4xl">
-        Projects & Resources 🗂️
+        Projects and Resources
         <hr className="w-8 h-1 mx-auto my-4 bg-gradient-to-r from-red-400 to-pink-600 border-0 rounded"></hr>
       </h1>
-      <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 space-y-28 my-5 py-1 sm:py-32 md:space-x-4 md:text-left">
-      
-      {/* <div className="flex flex-col space-y-28"> */}
+
+      <div className="flex flex-col space-y-28">
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
               <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className=" md:w-1/2">
-                    <Link href={project.link}>
+                    <Link href={project.github} target='_blank'>
                       <Image
                         src={project.image}
                         alt=""
@@ -56,25 +55,25 @@ const ProjectsSection = () => {
                       />
                     </Link>
                   </div>
-                  <div className="mt-8 md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
+                  <div className="text-center items-center mt-8 md:w-1/2">
+                    <h1 className="text-4xl text-center font-bold mb-6">{project.name}</h1>
                     <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                       {project.description}
                     </p>
-                    <div className="flex flex-row align-bottom space-x-4">
-                      
+                    <div className="flex flex-row py-1 justify-center align-bottom space-x-4">
                       <Link href={project.github} target="_blank">
-                        <FaCrow
+                        <BsFillRocketTakeoffFill
+                        size={30}
+                        className="hover:-translate-y-1 transition-transform cursor-pointer"
+                        />
+                      </Link>
+                      {/* <Link href={project.github} target="_blank">
+                        <BsGithub
                           size={30}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
-                        {/* <BsArrowUpShort
-                        size={30}
-                        className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        /> */}
                       </Link>
-                      
-                      {/* <Link href={project.link} target="_blank">
+                      <Link href={project.link} target="_blank">
                         <BsArrowUpRightSquare
                           size={30}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
