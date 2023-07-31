@@ -76,12 +76,12 @@ const AboutSection = () => {
             </ul>
             <br />
             <p>
-              Did I say we? Well, for now it's just me. I'm Jacob Boulgarides, a software devoloper and artist. I have a wide range of inspirations and passions, which 
+              Did I say we? Well, for now it&apos;s just me. I&apos;m Jacob Boulgarides, a software devoloper and artist. I have a wide range of inspirations and passions, which 
               pushes me to continue exploring new territory.  I know 
               just how important your vision can be, this is what drives me.
               I am always seeking new experiences and I love to keep myself
               engaged and learning new things.  This website was an attempt for me to better understand modern front end developement.  It was built with next.js as well as tailwind css,
-              and was deployed using Vercel.  Feedback on any of my projects is most welcome (I will be adding a comment section to this website to make this easier in the future).
+              and was deployed using Vercel.  Feedback on any of my projects is most welcome &#40;I will be adding a comment section to this website to make this easier in the future&#41;.
               As of right now, I am looking to finally get my feet wet in an official software developer role.  I have the foundation and functional knowledge to help build 
               performant solutions in a professional environment. 
             </p>
@@ -93,7 +93,7 @@ const AboutSection = () => {
               </span>,{" "}
               and that&#39;s why I strive to do more. I have a passion for
               technology and a desire to always push the limits of what is
-              possible. I'm extremely excited to see where the future takes me, and am
+              possible. I&apos;m extremely excited to see where the future takes me, and am
               always open to new opportunities. 🙂
             </p>
           </div>
