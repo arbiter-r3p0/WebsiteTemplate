@@ -10,23 +10,23 @@ const projects = [
     description:
       "A collection of audio projects both complete, and in various stages of production, organized by genre and purpose.",
     image: "/birdiem.jpg",
-    github: "https://drive.google.com/drive/folders/10KVPWJD8nYFKA0UycR0Z02RJpXDzTK_R?usp=sharing",
-    link: "https://thankfulthoughts.io/",
+    github: "https://www.youtube.com/playlist?list=PLswazYw70UOP8JuCNktm9SoceSXS3Xz_i",
+    link: "ricegumvoiceirrelevant",
   },
   {
     name: "Software",
     description: "A collection of code snippets, projects, resources, games, and more.",
     image: "/coding.jpg",
-    github: "https://drive.google.com/drive/u/9/folders/1sCUFVhDJIgWEeolYP0pZfUaRlCAK7J_B",
-    link: "https://platoio.com/register",
+    github: "https://drive.google.com/drive/folders/1oXY_c3wqUxqAJKhGo4UZFljUZU2m4Iys?usp=sharing",
+    link: "ricegumvoiceirrelevant",
   },
   {
     name: "Explore With Us",
     description:
       "This explore link will take you directly to whatever project the team has been cooking up for fun lately.",
     image: "/mway.jpg",
-    github: "https://www.modular.com/mojo",
-    link: "https://katorfamilyphotos.com/",
+    github: "https://colab.research.google.com/drive/12dsVQVfzKYv4C9Gz4FNevMhpqkxddZwJ?authuser=5",
+    link: "ricegumvoiceirrelevant",
   },
 ]
 

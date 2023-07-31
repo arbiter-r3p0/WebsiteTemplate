@@ -22,7 +22,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://twitter.com/hqasmei"
+            href="https://twitter.com/ArbiterFeed"
             rel="noreferrer"
             target="_blank"
           >
@@ -43,7 +43,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"
+            href="https://www.youtube.com/channel/UCGUdoQs3g_z4xBXM6Cvj2lw"
             rel="noreferrer"
             target="_blank"
           >

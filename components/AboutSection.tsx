@@ -46,7 +46,7 @@ const AboutSection = () => {
               Our Services:
             </h1>
             <p>
-              Hi there! Thanks for taking the time to check us out. We are <a className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-violet-600">Arbiter Corp</a>. A team of{" "}
+              Hi there! Thanks for taking the time to check out the website.  We are <a className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-violet-600">Arbiter Corp</a>. A team of{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
               <span className="font-bold">{" driven"}</span> software engineers, musicians and data scientists
@@ -76,26 +76,29 @@ const AboutSection = () => {
             </ul>
             <br />
             <p>
-              We have a wide range of personalities and passions at our company, and
-              this core pushes us to continue exploring new territory.  Our team knows 
-              just how important your vision can be, this is what drives us.
-              We are always seeking new experiences and love to keep ourselves
-              engaged and learning new things.
+              Did I say we? Well, for now it's just me. I'm Jacob Boulgarides, a software devoloper and artist. I have a wide range of inspirations and passions, which 
+              pushes me to continue exploring new territory.  I know 
+              just how important your vision can be, this is what drives me.
+              I am always seeking new experiences and I love to keep myself
+              engaged and learning new things.  This website was an attempt for me to better understand modern front end developement.  It was built with next.js as well as tailwind css,
+              and was deployed using Vercel.  Feedback on any of my projects is most welcome (I will be adding a comment section to this website to make this easier in the future).
+              As of right now, I am looking to finally get my feet wet in an official software developer role.  I have the foundation and functional knowledge to help build 
+              performant solutions in a professional environment. 
             </p>
             <br />
             <p>
-              We believe that you should{" "}
+              I believe that you should{" "}
               <span className="font-bold text-red-500">
                 never stop growing
               </span>,{" "}
-              and that&#39;s why we strive to do more. We have a passion for
+              and that&#39;s why I strive to do more. I have a passion for
               technology and a desire to always push the limits of what is
-              possible. Our team is excited to see where the future takes us, and we are
+              possible. I'm extremely excited to see where the future takes me, and am
               always open to new opportunities. 🙂
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
-            <h1 className="text-2xl font-bold mb-6">Some of Our Skills</h1>
+            <h1 className="text-2xl font-bold mb-6">Some of My Skills</h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (
