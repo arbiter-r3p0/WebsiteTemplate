@@ -21,9 +21,9 @@ const projects = [
     link: "ricegumvoiceirrelevant",
   },
   {
-    name: "Explore With Us",
+    name: "Explore",
     description:
-      "This explore link will take you directly to whatever project the team has been cooking up for fun lately.",
+      "This explore link will take you directly to whatever project I have been cooking up for fun lately.",
     image: "/mway.jpg",
     github: "https://colab.research.google.com/drive/12dsVQVfzKYv4C9Gz4FNevMhpqkxddZwJ?authuser=5",
     link: "ricegumvoiceirrelevant",
